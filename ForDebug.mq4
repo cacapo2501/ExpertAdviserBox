@@ -36,17 +36,17 @@ void OnTick()
    SimpleOrderControl *soc = new SimpleOrderControl(Symbol(), OP_BUY, 0.1, 0, 20.0, 1.0, clrAqua, clrBlue);
    if(!soc.fInitializeSuccessed()){
       Sleep(10000);
-      delete soc;
    }
    
+   delete soc;
    Sleep(10000);
    
    soc = new SimpleOrderControl(Symbol(), OP_SELL, 0.1, 0, 20.0, 1.0, clrMagenta, clrRed);
    if(!soc.fInitializeSuccessed()){
       Sleep(10000);
-      delete soc;
    }
    
+   delete soc;
    ExpertRemove();
   }
 //+------------------------------------------------------------------+
